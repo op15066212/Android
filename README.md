@@ -8,3 +8,5 @@
 java版本：java 17
 
 工具：IntelliJ IDEA Ultimate
+
+把 My Application 当作项目打开即可
