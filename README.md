@@ -1,7 +1,5 @@
 # Android
- 安卓项目
-
-外卖app
+ 安卓项目：外卖app
 
 安卓版本：Android 11
 
