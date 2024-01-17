@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <TextView
+            android:id="@+id/bg_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户信息管理"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+
+    <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bg_image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+        <!-- 用户名输入框 -->
+        <EditText
+                android:id="@+id/searchuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:hint="请输入用户名"
+                android:minHeight="4dp"/>
+
+        <Button
+                android:id="@+id/confirm_button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="搜索"
+                android:textSize="12sp"/>
+        <Button
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="清空"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ECEAEA">
+
+
+    <!-- 用户信息栏 -->
+    <RelativeLayout
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+        <!-- 头像 -->
+        <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/background"/>
+
+        <!-- 用户名、微信号 -->
+        <LinearLayout
+                android:id="@+id/avatar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/avatar"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/wechat_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="微信号"
+                    android:textSize="16sp"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/zhuangtai"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/textview_shape"
+                        android:gravity="center"
+                        android:text="+状态"/>
+
+                <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/textview_shape"
+                        android:gravity="center"
+                        android:text="..."/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/avatar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/baseline_qr_code_2_24"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=">"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- 服务、收藏、朋友圈、设置、退出登陆按钮 -->
+    <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_info"
+            android:layout_marginTop="16dp"
+
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            <ImageView
+                    android:id="@+id/service_imageview1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/b"/>
+
+            <TextView
+                    android:id="@+id/service_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_imageview1"
+                    android:padding="8dp"
+                    android:text="服务"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=">"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+        </RelativeLayout>
+
+
+        <!-- 收藏 -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+            <ImageView
+                    android:id="@+id/service_imageview2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/c"/>
+
+            <TextView
+                    android:id="@+id/collection_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_imageview2"
+                    android:padding="8dp"
+                    android:text="收藏"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=">"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+        </RelativeLayout>
+
+
+        <!-- 朋友圈 -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+            <ImageView
+                    android:id="@+id/service_imageview3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/f"/>
+
+            <TextView
+                    android:id="@+id/moment_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_imageview3"
+                    android:padding="8dp"
+                    android:text="朋友圈"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=">"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+        </RelativeLayout>
+
+        <!-- 卡包 -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+            <ImageView
+                    android:id="@+id/service_imageview4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/k"/>
+
+            <TextView
+                    android:id="@+id/kabao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_imageview4"
+                    android:padding="8dp"
+                    android:text="卡包"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=">"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+        </RelativeLayout>
+
+        <!-- 设置 -->
+        <RelativeLayout
+                android:id="@+id/shezhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+            <ImageView
+                    android:id="@+id/service_imageview5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/i"/>
+
+            <TextView
+                    android:id="@+id/setting_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_imageview5"
+                    android:padding="8dp"
+                    android:text="设置"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=">"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+        </RelativeLayout>
+
+        <!-- 退出登陆 -->
+        <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp"
+                android:text="退出登陆"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/food_image_2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/g"/>
+
+
+    <TextView
+            android:id="@+id/food_name_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="蛋炒饭"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="评分："
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/rating_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4.5分"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="销量："
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/sales_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1000+"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="价格："
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/price_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="¥15.00"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="食品信息："
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/info_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这是一种非常美味的食物，您一定要尝试一下！"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="预计制作时间："
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 分钟"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"/>
+
+
+    <!--    <TableLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginStart="100dp">-->
+
+    <!--        <TableRow >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/a" />-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/b" />-->
+    <!--        </TableRow>-->
+
+    <!--        <TableRow >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/c" />-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/d" />-->
+    <!--        </TableRow>-->
+
+    <!--        <TableRow >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/e" />-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/f" />-->
+    <!--        </TableRow>-->
+
+    <!--        <TableRow >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/g" />-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/h" />-->
+    <!--        </TableRow>-->
+    <!--    </TableLayout>-->
+
+    <!--    &lt;!&ndash; 布局文件中声明 &ndash;&gt;-->
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycler_view_3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_weight="1" />-->
+
+</LinearLayout>

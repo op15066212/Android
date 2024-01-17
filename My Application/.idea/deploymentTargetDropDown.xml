@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="LBWC895L95M7VOAI" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-01-17T14:04:26.261891700Z" />
+        </State>
+      </entry>
+      <entry key="foment">
+        <State />
+      </entry>
+      <entry key="login">
+        <State />
+      </entry>
+      <entry key="register">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

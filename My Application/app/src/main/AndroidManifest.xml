@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@drawable/background"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApplication">
+        <service
+                android:name=".service.MyService"
+                android:enabled="true"
+                android:exported="true" tools:ignore="ExportedService">
+        </service>
+
+        <receiver
+                android:name=".Receiver.MyReceiver"
+                android:enabled="true"
+                android:exported="true"
+                android:label="MyReceiver" tools:ignore="ExportedReceiver">
+        </receiver>
+
+        <provider
+                android:name=".Provider.MyContentProvider"
+                android:authorities="test"
+                android:enabled="true"
+                android:exported="true"
+                tools:ignore="ExportedContentProvider">
+        </provider>
+
+        <activity
+                android:name=".Main.Other.userUpdate"
+                android:exported="true"
+                android:label="userupdate">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.Test.userAdd"
+                android:exported="true"
+                android:label="useradd">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.Test.userList"
+                android:exported="true"
+                android:label="userList">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.fomentusers"
+                android:exported="true"
+                android:label="fomentusers">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.Test.detail"
+                android:exported="true"
+                android:label="detail">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.foment"
+                android:exported="true"
+                android:label="foment">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.login"
+                android:exported="true"
+                android:label="login">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.Test.main"
+                android:exported="true"
+                android:label="main">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.Test.my"
+                android:exported="true"
+                android:label="my">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.recover"
+                android:exported="true"
+                android:label="recover">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.register"
+                android:exported="true"
+                android:label="register">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Main.Other.users"
+                android:exported="true"
+                android:label="users">
+            <intent-filter>
+
+                <!--suppress MybatisXMapperXmlInspection-->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragmentusers.useradd">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:id="@+id/username0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp">
+            <TextView
+                    android:id="@+id/username1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="账号："
+                    android:textSize="20sp"/>
+            <!-- 用户名输入框 -->
+            <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/username1"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="请输入用户名"
+                    android:minHeight="48dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/password0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username0"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp">
+            <TextView
+                    android:id="@+id/password1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="密码："
+                    android:textSize="20sp"/>
+            <!-- 密码输入框 -->
+            <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/password1"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/confirm_password0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password0"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp">
+            <TextView
+                    android:id="@+id/confirm_password1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="重复："
+                    android:textSize="20sp"/>
+            <!-- 确认密码输入框 -->
+            <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/confirm_password1"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="请确认密码"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirm_password0"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp">
+
+            <TextView
+                    android:id="@+id/sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="性别："
+                    android:textSize="20sp"/>
+
+            <RadioGroup
+                    android:id="@+id/sex_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/sex_text"
+                    android:orientation="horizontal">
+
+
+                <RadioButton
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="男"/>
+
+                <RadioButton
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="女"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- 确定和取消按钮 -->
+        <LinearLayout
+                android:id="@+id/buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sex"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/confirm_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="0.5"
+                    android:text="确定"
+                    android:textSize="20sp"/>
+
+            <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:text="取消"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

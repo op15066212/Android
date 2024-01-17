@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/buttons_layout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="32dp"
+            android:orientation="horizontal">
+    </LinearLayout>
+    <!-- 确定和取消按钮 -->
+    <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_below="@id/buttons_layout0"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="http"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="recei"
+                android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!-- 确定和取消按钮 -->
+    <LinearLayout
+            android:id="@+id/buttons_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttons_layout"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/confirm_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="on"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/cancel_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="off"
+                android:textSize="20sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
