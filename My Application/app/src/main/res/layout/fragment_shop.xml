@@ -19,9 +19,9 @@
                     android:id="@+id/recycler_view_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="32dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginRight="32dp"
+                    android:layout_marginRight="16dp"
                     android:layout_weight="1"/>
 
             <TextView
@@ -39,9 +39,9 @@
                     android:id="@+id/recycler_view_3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="32dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginRight="32dp"
+                    android:layout_marginRight="16dp"
                     android:layout_weight="1"/>
         </LinearLayout>
     </ScrollView>
